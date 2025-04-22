@@ -1,0 +1,28 @@
+#In this calculator i have used match case method
+from re import match
+num3 = float(input("Enter first number: ")) #declairing first variable to get float input from user
+num4 = float(input("Enter second number: ")) #declairing second variable to get float input from user
+operat = input("Please enter an opeartor: ") #geting operator input from the user
+match operat: #mathcing cases 
+    case "+": 
+        print(f"First number is {num3}")
+        print(f"\nSecond number is {num4}")
+        print(f"\nSum is: {num3+num4}")
+    case "-":
+        print(f"First number is {num3}")
+        print(f"\nSecond number is {num4}")
+        print(f"\nASubtract is: {num3-num4}")
+    case "*":
+        print(f"First number is {num3}")
+        print(f"\nSecond number is {num4}")
+        print(f"\nMultiplication is: {num3*num4}")
+    case "/":
+        print(f"First number is {num3}")
+        print(f"\nSecond number is {num4}")
+        print(f"\nDivision is: {num3/num4}")
+    case "%":
+        print(f"First number is {num3}")
+        print(f"\nSecond number is {num4}")
+        print(f"\nModulus is: {num3%num4}")
+    case _:
+        print("\nPlease enter a valid operator!") #printing a final message if operator is wrong
